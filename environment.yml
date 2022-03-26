@@ -1,0 +1,30 @@
+name: text2regexp
+channels:
+  - defaults
+dependencies:
+  - blas=1.0=openblas
+  - bzip2=1.0.8=h620ffc9_4
+  - ca-certificates=2022.2.1=hca03da5_0
+  - libcxx=12.0.0=hf6beb65_1
+  - libffi=3.4.2=hc377ac9_2
+  - libgfortran=5.0.0=11_1_0_h6a59814_26
+  - libgfortran5=11.1.0=h6a59814_26
+  - libopenblas=0.3.17=hea475bc_1
+  - llvm-openmp=12.0.0=haf9daa7_1
+  - ncurses=6.3=h1a28f6b_2
+  - numpy-base=1.21.2=py310h6269429_0
+  - openssl=1.1.1m=h1a28f6b_0
+  - python=3.10.0=hbdb9e5c_5
+  - readline=8.1.2=h1a28f6b_1
+  - sqlite=3.37.2=h1058600_0
+  - tk=8.6.11=hb8d0fd4_0
+  - tzdata=2021e=hda174b7_0
+  - wheel=0.37.1=pyhd3eb1b0_0
+  - xz=5.2.5=h1a28f6b_0
+  - zlib=1.2.11=h5a0b063_4
+  - pip:
+    - certifi==2021.10.8
+    - numpy==1.21.2
+    - pip==21.2.4
+    - setuptools==58.0.4
+prefix: /Users/alexmac/miniconda3/envs/text2regexp
