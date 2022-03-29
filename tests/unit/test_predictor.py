@@ -1,12 +1,14 @@
-from regexp_finder.base import RegexpFinderBase
+from regexp_predictor import RegexpPredictor
 
 def test_regexp_match():
-    finder = RegexpFinderBase(
+    default_cls = 'neg'
+
+    finder = RegexpPredictor(
         default_dict={
             "pos": "positive",
             "neg": "negative"
         },
-        default_cls='neg'
+        default_cls=default_cls
     )
 
     texts = [
@@ -19,4 +21,4 @@ def test_regexp_match():
     ]
 
     predicted_labels = finder.predict(texts)
-    assert predicted_labels == ['pos', 'neg', 'pos', 'pos', 'neg', 'neg']
+    assert predicted_labels == ['pos', 'neg', 'pos', 'pos', 'neg', default_cls]

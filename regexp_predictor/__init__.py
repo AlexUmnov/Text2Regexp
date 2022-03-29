@@ -1,0 +1,1 @@
+from regexp_predictor.predictor import RegexpPredictor
